@@ -1,0 +1,21 @@
+{
+  "webpack": {
+    "externals": {
+      "react": "React",
+      "react-dom": "ReactDOM",
+      "react-router-dom": "ReactRouterDOM"
+    },
+    "entry": {
+      "Portal": "./src/index.ts"
+    },
+    "output": {
+      "path": "./build/umd",
+      "library": "[name]",
+      "libraryTarget": "umd",
+      "filename": "[name].js",
+      "auxiliaryComment": "Meaningless"
+    },
+    "devServer": false
+  },
+  "__unstable_module_federation": false
+}
